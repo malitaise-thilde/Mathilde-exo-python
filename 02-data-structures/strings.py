@@ -5,7 +5,7 @@ Created on Tue Jun  9 16:08:03 2026
 @author: mathi
 """
 
-mot = "Python"
+"""mot = "Python"
 
 print(mot[0])       # P
 print(mot[-1])      # n
@@ -29,4 +29,14 @@ for lettre in mot:
     if lettre == "a":
         compteur = compteur + 1
 
-print(compteur)             # 3
+print(compteur)             # 3"""
+
+mot = input("Quel est ton mot ? ")
+
+compteur = 0
+
+for lettre in mot:
+    if lettre in "aeiouy":
+        compteur = compteur + 1
+
+print(compteur) 
